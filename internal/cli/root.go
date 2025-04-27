@@ -38,7 +38,6 @@ var rootCmd = &cobra.Command{
 func init() {
 	rootCmd.PersistentFlags().BoolP("verbose", "v", false, "Enable verbose output")
 
-	systemCmd.AddCommand(fetchCmd)
 	rootCmd.AddCommand(systemCmd)
 }
 
